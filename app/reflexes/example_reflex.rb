@@ -6,4 +6,9 @@ class ExampleReflex < ApplicationReflex
   def test
     puts "We're live!"
   end
+
+  def update_count
+    @count = 1
+    @message = "Success"
+  end
 end

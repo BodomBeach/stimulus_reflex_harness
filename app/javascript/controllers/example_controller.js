@@ -4,6 +4,11 @@ import ApplicationController from './application_controller'
  * Learn more at: https://docs.stimulusreflex.com
  */
 export default class extends ApplicationController {
+
+  updateCount(e) {
+    this.stimulate('ExampleReflex#update_count', e.target, {selectors: '#container-to-update'})
+  }
+
   /* Reflex specific lifecycle methods.
    * Use methods similar to this example to handle lifecycle concerns for a specific Reflex method.
    * Using the lifecycle is optional, so feel free to delete these stubs if you don't need them.

@@ -1,0 +1,8 @@
+<% @count ||= 0 %>
+
+<div id="container-to-update" data-controller="example" style="width: 100px; height: 100px; background-color: grey">
+  <div data-action="click->example#updateCount">Update count</div>
+    <%= @count %>
+    <br>
+    <%= @message %>
+</div>
