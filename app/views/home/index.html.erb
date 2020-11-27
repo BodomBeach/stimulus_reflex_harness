@@ -1,10 +1,5 @@
-<button data-reflex="click->Example#test">Test</button>
+<div id="some-id" data-reflex="click->ExampleReflex#open_modal">Open modal</div>
 
-<% if @stimulus_reflex %>
-  <h1>Success! Random: <%= (rand * 100).to_i %></h1>
-<% end %>
-
-<%= link_to "Open modal with UJS", open_modal_path, remote: true  %>
-
-<div id="modal-container">
+<div id="example" data-controller="example">
+  <div id="modal-container"></div>
 </div>
