@@ -1,0 +1,7 @@
+<button id="button2" data-reflex="click->ExampleReflex#update_partial" data-value="<%= value2 %>">Click to update using partial morph</button>
+<div data-reflex="click->ExampleReflex#update_val_full_page" style="width: 300px; height: 100px; background-color: grey; margin-bottom: 10px">
+  <span data-reflex-permanent id="permanent2">With data-reflex-permanent : <%= value2 %></span><br>
+  <span>Without data-reflex-permanent : <%= value2 %></span><br>
+  <span style="color: white">(does not work as intended, data-reflex-permanent attribute is ignored)</span>
+
+</div>

@@ -1,5 +1,13 @@
-<div id="some-id" data-reflex="click->ExampleReflex#open_modal">Open modal</div>
+<% @value1 ||= 0 %>
+<% @value2 ||= 0 %>
 
-<div id="example" data-controller="example">
-  <div id="modal-container"></div>
+<button id="button1" data-reflex="click->ExampleReflex#update_full_page" data-value="<%= @value1 %>">Click using standard full page rendering</button>
+<div style="width: 300px; height: 100px; background-color: grey; margin-bottom: 10px">
+  <span data-reflex-permanent id="permanent1">With data-reflex-permanent : <%= @value1 %></span><br>
+  <span>Without data-reflex-permanent : <%= @value1 %></span><br>
+  <span style="color: white">(works as intended)</span>
+</div>
+
+<div id="partial-container">
+  <%= render 'value2_partial', value2: @value2 %>
 </div>

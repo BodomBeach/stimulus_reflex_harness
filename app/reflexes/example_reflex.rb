@@ -3,14 +3,13 @@
 class ExampleReflex < ApplicationReflex
   delegate :uuid, to: :connection
 
-  def open_modal
-    count = 0
-    morph "#modal-container", ApplicationController.render(partial: "home/modal", locals: {count: count})
+  def update_full_page
+    @value1 = element.dataset[:value].to_i + 1
   end
 
-  def update_count
-    count = element.dataset[:count].to_i + 1
-    morph "#modal-container", ApplicationController.render(partial: "home/modal", locals: {count: count})
+  def update_partial
+    value2 = element.dataset[:value].to_i + 1
+    morph '#partial-container', ApplicationController.render(partial: "home/value2_partial", locals: {value2: value2})
   end
 
 end

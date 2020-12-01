@@ -1,16 +1,16 @@
 GIT
   remote: https://github.com/hopsoft/cable_ready.git
-  revision: 675b6dc2401510aed7b1a34b49f7d2757f51a4fc
+  revision: 43539bdcb0f4ccabbe2070426cc75115573c4629
   specs:
-    cable_ready (4.4.0)
+    cable_ready (4.4.3)
       rails (>= 5.2)
 
 GIT
   remote: https://github.com/hopsoft/stimulus_reflex.git
-  revision: 00690f93e7e3725b19219053b7e0cc292ca57a71
+  revision: 82d22476ef503d653a1dc975f7daa4152223c3a1
   specs:
-    stimulus_reflex (3.4.0.pre5)
-      cable_ready (>= 4.3.0)
+    stimulus_reflex (3.4.0.pre7)
+      cable_ready (>= 4.4)
       nokogiri
       rack
       rails (>= 5.2)
